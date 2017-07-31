@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPCAdapters", "OPCAdapters\OPCAdapters.csproj", "{C7A2BEE2-6DAF-49CC-8282-3B2E59C43F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{5A5B1C4B-F05B-4A3D-B780-A6181BE71B53}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9AF20142-0E86-42E6-B4F6-624C185642B8}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7A2BEE2-6DAF-49CC-8282-3B2E59C43F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7A2BEE2-6DAF-49CC-8282-3B2E59C43F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7A2BEE2-6DAF-49CC-8282-3B2E59C43F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7A2BEE2-6DAF-49CC-8282-3B2E59C43F04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7A2BEE2-6DAF-49CC-8282-3B2E59C43F04} = {5A5B1C4B-F05B-4A3D-B780-A6181BE71B53}
+	EndGlobalSection
+EndGlobal

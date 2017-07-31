@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C7A2BEE2-6DAF-49CC-8282-3B2E59C43F04}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OPCAdapters</RootNamespace>
+    <AssemblyName>OPCAdapters</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Build\Output\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Build\Output\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ExpressionEvaluator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=90d9f15d622e2348, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExpressionEvaluator.2.0.4.0\lib\net40\ExpressionEvaluator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GSF.Communication, Version=2.2.75.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GSF.Communication.2.2.75-beta\lib\net46\GSF.Communication.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GSF.Core, Version=2.2.75.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GSF.Core.2.2.75-beta\lib\net46\GSF.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GSF.Security, Version=2.2.75.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GSF.Security.2.2.75-beta\lib\net46\GSF.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GSF.ServiceProcess, Version=2.2.75.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GSF.ServiceProcess.2.2.75-beta\lib\net46\GSF.ServiceProcess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GSF.TimeSeries, Version=2.2.75.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\GSF.TimeSeries.2.2.75-beta\lib\net46\GSF.TimeSeries.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Opc.Ua.Client">
+      <HintPath>..\Dependencies\OPC\Opc.Ua.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Opc.Ua.Core">
+      <HintPath>..\Dependencies\OPC\Opc.Ua.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OPCClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
