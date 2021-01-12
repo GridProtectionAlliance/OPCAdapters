@@ -1,6 +1,7 @@
-# OPCAdapters
-OPC-UA Adapters for the Grid Solutions Framework Time-series Library
+# _NOTE_: A user contributed version of OPC adapters for the openHistorian is now available: https://github.com/Pinkisagit/OpenHistorian-OPC-UA-Adapter
 
+![Logo](https://gridprotectionalliance.org/images/products/productTitles75/openOPC.png)
+OPC-UA Adapters for the Grid Solutions Framework Time-series Library
 
 #### License Notice
 
